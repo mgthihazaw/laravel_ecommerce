@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('welcome');
-});
-Route::view('/admin', 'admin.dashboard.index');
+})->name('login');
+// Route::view('/admin', 'admin.dashboard.index');
+
+require 'admin.php';
