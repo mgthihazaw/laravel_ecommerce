@@ -13,7 +13,7 @@ class BaseController extends Controller
 
     protected function setPageTitle($title, $subTitle)
     {
-        view()->share(['PageTitle' => $title, 'subTitle' => $subTitle]);
+        view()->share(['pageTitle' => $title, 'subTitle' => $subTitle]);
     }
     protected function showErrorPage($errorCode = 404, $message = null)
     {
