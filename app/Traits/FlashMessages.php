@@ -5,11 +5,11 @@ namespace App\Traits;
 trait FlashMessage
 {
     protected $errorMessages = [];
-    protected $infoMesssages = [];
+    protected $infoMessages = [];
     protected $successMessages = [];
     protected $warningMessages = [];
 
-    protected function setMessage($message, $type)
+    protected function setFlashMessages($message, $type)
     {
         $model = 'infoMessages';
 

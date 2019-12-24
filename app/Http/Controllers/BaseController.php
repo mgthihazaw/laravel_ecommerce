@@ -29,9 +29,9 @@ class BaseController extends Controller
             'data' => $data
         ]);
     }
-    protected function responseRedriect($route, $message, $type = 'info', $error = false, $withOldInputWhenError = false)
+    protected function responseRedirect($route, $message, $type = 'info', $error = false, $withOldInputWhenError = false)
     {
-        $this->setFlashMessage($message, $type);
+        $this->setFlashMessages($message, $type);
         $this->showFlashMessages();
 
         if ($error && $withOldInputWhenError) {

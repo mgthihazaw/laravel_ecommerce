@@ -22,7 +22,8 @@
                     <a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Admin Users</a>
                 </li>
                 <li>
-                    <a class="treeview-item" href="#" target="_blank" rel="noopener noreferrer"><i class="icon fa fa-circle-o"></i> Roles</a>
+                    <a class="treeview-item" href="#" target="_blank" rel="noopener noreferrer"><i
+                            class="icon fa fa-circle-o"></i> Roles</a>
                 </li>
                 <li>
                     <a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Permissions</a>
@@ -30,9 +31,17 @@
             </ul>
         </li>
         <li>
-            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.settings' ? 'active' : '' }}" href="{{ route('admin.settings') }}">
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.settings' ? 'active' : '' }}"
+                href="{{ route('admin.settings') }}">
                 <i class="app-menu__icon fa fa-cogs"></i>
                 <span class="app-menu__label">Settings</span>
+            </a>
+        </li>
+        <li>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.categories.index' ? 'active' : '' }}"
+                href="{{ route('admin.categories.index') }}">
+                <i class="app-menu__icon fa fa-tags"></i>
+                <span class="app-menu__label">Categories</span>
             </a>
         </li>
     </ul>
